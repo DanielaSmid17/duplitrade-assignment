@@ -19,7 +19,7 @@ export default function Dashboard({selectedRow, setSelectedRow, isSelectedRowTra
                 <Grid item>
                     <Info />
                 </Grid>
-                <Grid item container direction='column'>
+                <Grid item container alignItems='center' direction='column'>
                     <TabContext value={"1"}>
                         <Grid item>
                             <TabList aria-label="lab API tabs example">
@@ -32,7 +32,6 @@ export default function Dashboard({selectedRow, setSelectedRow, isSelectedRowTra
                             </TabList>
                         </Grid>
                         <Grid item>
-
                             <TabPanel value="1">
                                 <Graph data={data} />
                             </TabPanel>
@@ -40,7 +39,7 @@ export default function Dashboard({selectedRow, setSelectedRow, isSelectedRowTra
                     </TabContext>
 
                 </Grid>
-                <Grid item container>
+                <Grid item container justifyContent='center'>
                     <DataTable setSelectedRow={setSelectedRow} selectedRow={selectedRow} isSelectedRowTraded={isSelectedRowTraded} />
                 </Grid>
         
